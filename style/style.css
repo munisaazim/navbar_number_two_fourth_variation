@@ -10,6 +10,11 @@
 nav ul{
     list-style: none;
 }
+nav:after{
+    content:'';
+    clear:both;
+    display: table;
+}
 nav ul ul{
     list-style: none;
 }
@@ -87,22 +92,25 @@ nav ul ul ul li{
 i{
     font-size: small;
 }
-.logo{
+input{
+    display: none;
+}
+.icon{
     display: none;
 }
 @media(max-width:629px){
-    nav .logo{
+    nav .logo {
         width:100%;
         display: block;
         padding-left: 30px;
+        float: none;
     }
     nav ul li{
        margin-right: 0;
     }
 @media (max-width:590px) {
-
     nav ul {
-        float: none;
+        float: left;
     }
     nav ul li, nav ul ul li {
         width: 100%;
@@ -114,6 +122,14 @@ i{
         visibility: visible;
         opacity: 1;
         display: none;
+    }
+    .icon{
+        color: black;
+        font-size: 28px;
+        cursor: pointer;
+        display: block;
+        float: right;
+        margin-top: -50px;
     }
 }
 }
