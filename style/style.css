@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f6ff;
+}
+/*Ordinary menu*/
+nav ul{
+    list-style: none;
+}
+nav ul ul{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav .logo{
+    float: left;
+    padding-left: 60px;
+    line-height: 70px;
+    font-size: 27px;
+}
+.dot{
+    font-size: 27px;
+    color: #e8505b;
+}
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 8px;
+}
+nav ul li a{
+    line-height: 80px;
+    padding: 8px 15px;
+    font-size: 18px;
+    color: black;
+}
+nav ul li a.home{ 
+    color: #e8505b;
+    border-bottom: #e8505b 2px solid;
+}
+nav ul li a:hover{
+    color: #e8505b;
+    border-bottom: #e8505b 2px solid;
+}
+nav ul li a.active{
+    border: 2px #e8505b solid;
+    background-color: #e8505b;
+    color: aliceblue;
+}
+nav ul li a.active:hover{
+    border: 2px #14b1ab solid;
+    background-color: #14b1ab;
+}
+/*Dropbox menu*/
+nav ul ul {
+    position: absolute;
+    top: 90px;
+    transition: all 0.1s;
+    opacity: 0;
+    visibility: hidden;
+}
+nav ul li:hover>ul{
+    opacity: 1;
+    visibility: visible;
+    top: 70px;
+}
+nav ul ul li{
+    position: relative;
+    width: 190px;
+    float: none;
+    display: list-item;
+}
+nav ul ul li a{
+    line-height: 80px;
+}
+nav ul ul ul li{
+    position: relative;
+    left: 130px;
+    top: -70px;
+}
+i{
+    font-size: small;
+}
