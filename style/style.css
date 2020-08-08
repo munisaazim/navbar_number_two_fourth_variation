@@ -104,9 +104,16 @@ i{
     nav ul {
         float: none;
     }
-    nav ul li{
+    nav ul li, nav ul ul li {
         width: 100%;
-        display: block; 
+        display: block;
+    }
+    nav ul ul{
+        position: static;
+        top: 70px;
+        visibility: visible;
+        opacity: 1;
+        display: none;
     }
 }
 }
