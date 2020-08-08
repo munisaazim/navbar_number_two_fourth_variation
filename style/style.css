@@ -87,3 +87,26 @@ nav ul ul ul li{
 i{
     font-size: small;
 }
+.logo{
+    display: none;
+}
+@media(max-width:629px){
+    nav .logo{
+        width:100%;
+        display: block;
+        padding-left: 30px;
+    }
+    nav ul li{
+       margin-right: 0;
+    }
+@media (max-width:590px) {
+
+    nav ul {
+        float: none;
+    }
+    nav ul li{
+        width: 100%;
+        display: block; 
+    }
+}
+}
