@@ -95,7 +95,7 @@ i{
 input{
     display: none;
 }
-.icon, .show{
+.icon, .show    {
     display: none;
 }
 @media(max-width:629px){
