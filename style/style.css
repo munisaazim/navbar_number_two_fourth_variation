@@ -95,7 +95,7 @@ i{
 input{
     display: none;
 }
-.icon{
+.icon, .show{
     display: none;
 }
 @media(max-width:629px){
@@ -130,6 +130,32 @@ input{
         display: block;
         float: right;
         margin-top: -50px;
+        margin-right: 25px;
     }
+    .show{
+        line-height: 80px;
+        padding-left: 25px;
+        font-size: 18px;
+        display: block;
+    }
+    .show+a, ul{
+        display: none;
+    }
+
+    [id^=btn]:checked+ul{
+      display: block;
+    }
+    .hidden{
+        display: none;
+    }
+    nav ul ul ul li{
+        position: static;
+    }
+    nav ul ul a{
+        padding-left:40px  ;
+    }
+nav ul ul ul li{
+   padding-left: 20px;
+}
 }
 }
